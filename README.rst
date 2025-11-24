@@ -143,36 +143,6 @@ Click here to try `RapidProxy`_, your all-in-one proxy solution. Enjoy unlimited
 
 .. _`RapidProxy`: https://www.rapidproxy.io/?ref=gitnew
 
-Proxy Usage
-===========
-Newspaper3K supports proxies. Here is an example using `Thordata Proxies`_, a reliable proxy service suitable for AI and global web scraping scenarios.
-
-.. code-block:: pycon
-
-    from newspaper import Article
-    from newspaper import Configuration
-    
-    # Configure ThorData proxy
-    config = Configuration()
-    config.proxies = {
-        'https': 'https://td-customer-USERNAME:PASSWORD@t.pr.thordata.net:9999'
-    }
-
-    # Download and parse an article through the proxy
-    article = Article('https://www.nytimes.com/2024/01/15/technology/ai-trends.html', config=config)
-    article.download()
-    article.parse()
-    print(f"Title: {article.title}")
-
-`Click here to get a free trial of ThorData`_
-
-.. image:: https://github.com/user-attachments/assets/27c4288e-4507-4100-9127-ae2960af287a
-        :target: https://affiliate.thordata.com/tzc4taw66x3b
-        :alt: ThorData proxies
-
-.. _`Thordata Proxies`: https://affiliate.thordata.com/tzc4taw66x3b
-.. _`Click here to get a free trial of ThorData`: https://affiliate.thordata.com/tzc4taw66x3b
-
 
 Multi-lingual
 =============
